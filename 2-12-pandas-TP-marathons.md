@@ -17,11 +17,14 @@ kernelspec:
 ```{code-cell} ipython3
 import pandas as pd
 import numpy as np
+import os
 ```
 
 ## les données
 
-+++
+```{code-cell} ipython3
+git remote get-url origin
+```
 
 On va étudier un jeu de données trouvés sur Internet  
 des données des marathons dans différents pays
@@ -73,7 +76,6 @@ sauvez le fichier des marathon dans différentes villes en `csv`
 ```{code-cell} ipython3
 # votre code
 df.to_csv('marathon.csv', index = False ) 
-
 ```
 
 +++ {"tags": ["raises-exception"]}
